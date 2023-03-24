@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VueLamp</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./assets/images/menu.png" class="menu-img" />
+        <img src="./assets/images/logo.png" class="logo-img" />
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+
+        <button type="button" onclick="toggleBtn()" id="toggle-btn"><span></span></button>
+      </nav>
+
+      <div class="lamp-container">
+        <img src="./assets/images/lamp.png" class="lamp" />
+        <img src="./assets/images/light.png" class="light" id="light-shine"/>
+      </div>
+
+      <div class="text-container">
+        <h1>Blow Blow Bloww..</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum delectus
+          recusandae sed illo, sunt quia omnis animi accusamus adipisci
+          corrupti.
+        </p>
+        <a href="">Click On Links</a>
+        
+        
+
+      </div>
+
+    </div>
+<script>
+    let btn = document.getElementById("toggle-btn");
+    let light = document.getElementById("light-shine");
+
+    function toggleBtn(){
+    btn.classList.toggle("active");
+    light.classList.toggle("on");
+    }
+</script>
+  </body>
+</html>
